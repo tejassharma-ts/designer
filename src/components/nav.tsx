@@ -36,6 +36,7 @@ export default function Nav() {
                 src={link.src}
                 alt={link.alt}
                 unoptimized
+                priority
               />
             </a>
           </li>

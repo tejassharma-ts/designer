@@ -83,20 +83,20 @@ export default function Hero() {
         className="flex flex-col items-center justify-center gap-5 pt-16">
         <motion.h1
           variants={heroElementVariants}
-          className="text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px] md:text-6xl sm:text-4xl">
+          className="text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px] sm:text-5xl md:text-6xl">
           I&apos;m Jatin, Your{" "}
-          <span className="bg-gradient-to-r from-white via-primary via-40% to-white bg-clip-text font-bold text-transparent">
+          <span className="bg-gradient-to-r from-white via-primary via-40% to-white bg-clip-text font-bold text-transparent mr-[1px]">
             Next-Gen
           </span>
         </motion.h1>
         <motion.h1
           variants={heroElementVariants}
-          className="-mt-4 text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px] md:text-6xl sm:text-4xl">
+          className="-mt-4 text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px] sm:text-5xl md:text-6xl">
           Passionate Designer
         </motion.h1>
         <motion.p
           variants={heroElementVariants}
-          className="max-w-2xl text-center text-muted-foreground text-base md:text-sm">
+          className="max-w-2xl text-center text-base text-muted-foreground md:text-sm">
           Experience the magic of a designer who transforms ideas into visually striking,
           emotionally resonant works, setting new standards in UI/UX and brand identity design.
         </motion.p>
@@ -120,11 +120,11 @@ export default function Hero() {
         initial="off"
         variants={cardVariants}
         animate={cartContrls}
-        className="flex gap-3 overflow-x-hidden min-w-full mt-24">
+        className="mt-24 flex min-w-full gap-3 overflow-x-hidden">
         <motion.div variants={cardVariants}>
           <img
             src="/big-circle.svg"
-            className="absolute left-1/2 top-0 -z-40 -translate-x-1/2 -translate-y-[50%] border object-cover blur-3xl opacity-[.4]"
+            className="absolute left-1/2 top-0 -z-40 -translate-x-1/2 -translate-y-[50%] border object-cover opacity-[.4] blur-3xl md:-translate-y-[20%] sm:translate-y-0"
           />
         </motion.div>
         <motion.div

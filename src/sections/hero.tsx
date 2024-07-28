@@ -83,7 +83,7 @@ export default function Hero() {
         className="flex flex-col items-center justify-center gap-5 pt-16">
         <motion.h1
           variants={heroElementVariants}
-          className="text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px]">
+          className="text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px] md:text-6xl sm:text-4xl">
           I&apos;m Jatin, Your{" "}
           <span className="bg-gradient-to-r from-white via-primary via-40% to-white bg-clip-text font-bold text-transparent">
             Next-Gen
@@ -91,12 +91,12 @@ export default function Hero() {
         </motion.h1>
         <motion.h1
           variants={heroElementVariants}
-          className="-mt-4 text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px]">
+          className="-mt-4 text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px] md:text-6xl sm:text-4xl">
           Passionate Designer
         </motion.h1>
         <motion.p
           variants={heroElementVariants}
-          className="max-w-2xl text-center text-muted-foreground">
+          className="max-w-2xl text-center text-muted-foreground text-base md:text-sm">
           Experience the magic of a designer who transforms ideas into visually striking,
           emotionally resonant works, setting new standards in UI/UX and brand identity design.
         </motion.p>
@@ -120,18 +120,18 @@ export default function Hero() {
         initial="off"
         variants={cardVariants}
         animate={cartContrls}
-        className="flex gap-3 overflow-x-hidden min-w-full">
+        className="flex gap-3 overflow-x-hidden min-w-full mt-24">
         <motion.div variants={cardVariants}>
           <img
             src="/big-circle.svg"
-            className="absolute left-1/2 top-0 -z-40 -translate-x-1/2 -translate-y-[50%] border object-cover blur-3xl"
+            className="absolute left-1/2 top-0 -z-40 -translate-x-1/2 -translate-y-[50%] border object-cover blur-3xl opacity-[.4]"
           />
         </motion.div>
         <motion.div
           initial="stop"
           animate={marqueeControls}
           variants={marqueeVariants}
-          className="mt-10 flex min-w-full flex-shrink-0 justify-around gap-3">
+          className="flex min-w-full flex-shrink-0 justify-around gap-3">
           <ShinyBorderContainer className="group relative min-h-96">
             <Image fill src="/project-1.jpg" alt="project-1" className="object-cover" />
             <span className="absolute right-4 top-4 z-50 flex size-14 items-center justify-center rounded-full bg-white/10 backdrop-blur-lg">
@@ -162,7 +162,7 @@ export default function Hero() {
           initial="stop"
           animate={marqueeControls}
           variants={marqueeVariants}
-          className="mt-10 flex min-w-full flex-shrink-0 justify-around gap-3">
+          className="flex min-w-full flex-shrink-0 justify-around gap-3">
           <ShinyBorderContainer className="group relative min-h-96">
             <Image fill src="/project-1.jpg" alt="project-1" className="object-cover" />
             <span className="absolute right-4 top-4 z-50 flex size-14 items-center justify-center rounded-full bg-white/10 backdrop-blur-lg">

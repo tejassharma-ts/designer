@@ -1,6 +1,8 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import ShinyBorderContainer from "./ui/fancy-border";
+import { Input } from "./ui/input";
 
 const socialMediaLinks = [
   { src: "/whatsapp.png", alt: "WhatsApp", href: "https://www.whatsapp.com" },
@@ -23,7 +25,7 @@ export default function Nav() {
         <span className="font-semibold">Jatin Prajapaty</span>
       </div>
 
-      <ul className="flex gap-5 rounded-full border border-white/20 bg-gradient-to-r from-white/10 via-background to-white/10 px-3 py-2 backdrop-blur-3xl">
+      <ul className="relative flex gap-5 rounded-full border border-white/40 bg-gradient-to-r from-white/15 via-background to-white/15 px-3 py-2 backdrop-blur-3xl before:absolute before:h-[130%] before:bg-background/90 before:w-32 before:blur-sm before:rounded-full before:left-1/2 before:-z-10 before:-bottom-[20%] before:-translate-x-[30%] md:hidden">
         {socialMediaLinks.map((link, index) => (
           <li key={index} className="transition-transform duration-300 hover:-translate-y-1">
             <a href={link.href} target="_blank" rel="noopener noreferrer">
@@ -39,8 +41,11 @@ export default function Nav() {
           </li>
         ))}
       </ul>
-
-      <Button className="px-6">Portfolio</Button>
+      <div className="h-auto rounded-lg bg-gradient-to-b from-white p-px">
+        <Button className="inline-block w-full rounded-[calc(2rem+1px)] bg-primary px-6 sm:px-4">
+          Portfolio
+        </Button>
+      </div>
     </nav>
   );
 }

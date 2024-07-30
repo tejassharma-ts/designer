@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import ShinyBorderContainer from "@/components/ui/fancy-border";
 import { Icons } from "@/components/icons";
 import { PreloaderContext, PreloaderContextProps } from "@/context/preloader-context";
+import { SocialIcons } from "@/components/nav";
 
 const heroElementVariants = {
   down: {
@@ -83,38 +84,42 @@ export default function Hero() {
         className="flex flex-col items-center justify-center gap-5 pt-16">
         <motion.h1
           variants={heroElementVariants}
-          className="text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px] sm:text-5xl md:text-6xl">
+          className="text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px] md:text-6xl sm:text-5xl">
           I&apos;m Jatin, Your{" "}
-          <span className="bg-gradient-to-r from-white via-primary via-40% to-white bg-clip-text font-bold text-transparent mr-[1px]">
+          <span className="mr-[1px] bg-gradient-to-r from-white via-primary via-40% to-white bg-clip-text font-bold text-transparent">
             Next-Gen
           </span>
         </motion.h1>
         <motion.h1
           variants={heroElementVariants}
-          className="-mt-4 text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px] sm:text-5xl md:text-6xl">
+          className="-mt-4 text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px] md:text-6xl sm:text-5xl">
           Passionate Designer
         </motion.h1>
         <motion.p
           variants={heroElementVariants}
-          className="max-w-2xl text-center text-base text-muted-foreground md:text-sm">
+          className="max-w-3xl text-center text-base text-muted-foreground md:text-sm">
           Experience the magic of a designer who transforms ideas into visually striking,
-          emotionally resonant works, setting new standards in UI/UX and brand identity design.
+          emotionally
+          <br /> resonant works, setting new standards in UI/UX and brand identity design.
         </motion.p>
         <motion.div
           variants={heroElementVariants}
-          className="mt-4 rounded-full bg-gradient-to-r from-background to-white/40 p-px">
+          className="mt-4 w-full max-w-md flex-1 rounded-full bg-gradient-to-r from-background to-white/40 p-px">
           <div className="relative rounded-[calc(2rem-1px)] bg-background">
-            <div className="flex items-center p-2">
+            <div className="flex h-[50px] items-center">
               <Input
                 placeholder="marcus@example.com"
                 className="border-transparent bg-transparent px-4 text-base"
               />
-              <Button className="text-base">Subscribe</Button>
+              <Button className="h-[50px] text-base">Subscribe</Button>
             </div>
           </div>
         </motion.div>
       </motion.div>
 
+      <div className="justify-center hidden md:flex my-16">
+        <SocialIcons className="justify-center hidden md:flex self-center" iconClassName="w-[60px]"/>
+      </div>
       {/* Projects */}
       <motion.div
         initial="off"
@@ -124,7 +129,7 @@ export default function Hero() {
         <motion.div variants={cardVariants}>
           <img
             src="/big-circle.svg"
-            className="absolute left-1/2 top-0 -z-40 -translate-x-1/2 -translate-y-[50%] border object-cover opacity-[.4] blur-3xl md:-translate-y-[20%] sm:translate-y-0"
+            className="absolute left-1/2 top-0 -z-40 -translate-x-1/2 -translate-y-[58%] lg:-translate-y-[30%] border object-cover opacity-[.4] blur-[300px] md:-translate-y-[20%] sm:translate-y-0"
           />
         </motion.div>
         <motion.div

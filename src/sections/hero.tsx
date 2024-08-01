@@ -104,7 +104,7 @@ export default function Hero() {
         </motion.p>
         <motion.p
           variants={heroElementVariants}
-          className="hidden max-w-3xl text-center text-base leading-[1] text-white/50 md:text-sm sm:block sm:text-[10px]">
+          className="hidden max-w-3xl text-center text-base leading-[1] text-white/50 md:text-sm sm:block sm:text-[10px] sm:px-3">
           Experience the magic of a designer who transforms ideas into visually striking,
           emotionally resonant works, setting new standards in UI/UX and brand identity design.
         </motion.p>

@@ -50,8 +50,8 @@ export function SocialIcons({
 
 export default function Nav() {
   return (
-    <nav className="mx-auto flex h-28 max-w-7xl items-center justify-between">
-      <div className="flex items-center gap-4">
+    <nav className="mx-auto flex h-28 max-w-7xl items-center justify-between px-3">
+      <div className="flex items-center gap-3">
         <Avatar>
           <AvatarImage src="/hero.png" />
           <AvatarFallback className="border border-white/10 bg-background">JP</AvatarFallback>

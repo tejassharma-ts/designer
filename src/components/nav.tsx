@@ -19,8 +19,8 @@ export function SocialIcons({
   className,
   iconClassName,
 }: {
-  className: string;
-  iconClassName: string;
+  className?: string;
+  iconClassName?: string;
 }) {
   return (
     <ul

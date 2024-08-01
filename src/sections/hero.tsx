@@ -84,20 +84,20 @@ export default function Hero() {
         className="flex flex-col items-center justify-center gap-5 pt-16">
         <motion.h1
           variants={heroElementVariants}
-          className="text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px] md:text-6xl sm:text-5xl">
+          className="text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px] md:text-6xl sm:text-3xl">
           I&apos;m Jatin, Your{" "}
-          <span className="mr-[1px] bg-gradient-to-r from-white via-primary via-40% to-white bg-clip-text font-bold text-transparent">
+          <span className="mr-[1px] bg-gradient-to-r from-white via-primary-dark via-50% to-white bg-clip-text font-bold text-transparent">
             Next-Gen
           </span>
         </motion.h1>
         <motion.h1
           variants={heroElementVariants}
-          className="-mt-4 text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px] md:text-6xl sm:text-5xl">
+          className="-mt-4 text-center text-7xl font-semibold leading-[1.1] [word-spacing:-5px] md:text-6xl sm:text-3xl">
           Passionate Designer
         </motion.h1>
         <motion.p
           variants={heroElementVariants}
-          className="max-w-3xl text-center text-base text-muted-foreground md:text-sm">
+          className="max-w-3xl text-center text-base sm:text-[8px] text-white/50  md:text-sm">
           Experience the magic of a designer who transforms ideas into visually striking,
           emotionally
           <br /> resonant works, setting new standards in UI/UX and brand identity design.

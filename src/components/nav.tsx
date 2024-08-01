@@ -25,7 +25,7 @@ export function SocialIcons({
   return (
     <ul
       className={cn(
-        "relative flex gap-4 rounded-full border border-white/40 bg-gradient-to-r from-white/15 via-background to-white/15 p-2 backdrop-blur-3xl before:absolute before:-bottom-[20%] before:left-1/2 before:-z-10 before:h-[140%] before:w-[40px] before:-translate-x-[30%] before:rounded-full before:bg-background before:blur-sm md:hidden",
+        "absolute left-1/2 h-[50px] -translate-x-1/2 flex items-center gap-4 rounded-full border border-white/40 bg-gradient-to-r from-white/15 via-background to-white/15 p-2 backdrop-blur-3xl before:absolute before:-bottom-[20%] before:left-1/2 before:-z-10 before:h-[140%] before:w-[80px] before:-translate-x-[50%] before:rounded-full before:bg-background before:blur-sm md:hidden",
         className,
       )}>
       {socialMediaLinks.map((link, index) => (

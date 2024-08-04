@@ -104,14 +104,14 @@ export default function Hero() {
         </motion.p>
         <motion.p
           variants={heroElementVariants}
-          className="hidden max-w-3xl text-center text-base leading-[1] text-white/50 md:text-sm sm:block sm:text-[10px] sm:px-3">
+          className="hidden max-w-3xl text-center text-base leading-[1] text-white/50 md:text-sm sm:block sm:px-3 sm:text-[10px]">
           Experience the magic of a designer who transforms ideas into visually striking,
           emotionally resonant works, setting new standards in UI/UX and brand identity design.
         </motion.p>
-        <div className="px-3">
+        <div className="w-full max-w-[32rem] px-3">
           <motion.div
             variants={heroElementVariants}
-            className="mt-4 w-full max-w-md flex-1 rounded-full bg-gradient-to-r from-background to-white/40 p-px">
+            className="mt-4 w-full rounded-full bg-gradient-to-r from-background to-white/40 p-px">
             <div className="relative rounded-[calc(2rem-1px)] bg-background">
               <div className="flex h-[50px] items-center">
                 <Input
@@ -137,11 +137,14 @@ export default function Hero() {
         variants={cardVariants}
         animate={cartContrls}
         className="mt-24 flex min-w-full gap-3 overflow-x-hidden">
-        {/* <div className="absolute inset-0 top-0 aspect-square rounded-full border-[80px] border-white/10 bg-transparent  -z-10 sm:-translate-y-[20%] sm:scale-x-110 sm:p-[180px] blur-[50px]" /> */}
         <motion.div variants={cardVariants}>
+          {/* <img */}
+          {/*   src="/big-circle.svg" */}
+          {/*   className="absolute inset-0 -z-10 w-full -translate-y-1/2 opacity-30 lg:-translate-y-[40%] sm:-translate-y-16" */}
+          {/* /> */}
           <img
-            src="/big-circle.svg"
-            className="absolute left-1/2 top-0 -z-40 -translate-x-1/2 -translate-y-[58%] border object-cover opacity-[.4] blur-[300px] lg:-translate-y-[30%] md:-translate-y-[20%] sm:translate-y-0 sm:stroke-[5]"
+            src="/big-circle.png"
+            className="absolute inset-0 -z-10 w-full -translate-y-1/2 opacity-30 lg:-translate-y-[40%] md:hidden"
           />
         </motion.div>
         <motion.div

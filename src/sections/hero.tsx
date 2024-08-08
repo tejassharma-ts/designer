@@ -115,7 +115,7 @@ export default function Hero() {
             <div className="relative rounded-[calc(2rem-1px)] bg-background">
               <div className="flex h-[50px] items-center">
                 <Input
-                  placeholder="marcus@example.com"
+                  placeholder="jatinprajapaty@gmail.com"
                   className="border-transparent bg-transparent px-4 text-base sm:text-sm"
                 />
                 <Button className="h-[50px] text-base sm:text-sm">Subscribe</Button>

@@ -9,7 +9,7 @@ const socialMediaLinks = [
   { src: "/whatsapp.png", alt: "WhatsApp", href: "https://www.whatsapp.com" },
   { src: "/linkedin.png", alt: "LinkedIn", href: "https://www.linkedin.com" },
   { src: "/dribble.png", alt: "Dribble", href: "https://www.dribbble.com" },
-  { src: "/meet.png", alt: "Google Meet", href: "https://meet.google.com" },
+  { src: "/cal.png", alt: "Google Meet", href: "https://cal.com/jatinprajapaty" },
   { src: "/behance.png", alt: "Behance", href: "https://www.behance.net" },
   { src: "/insta.png", alt: "Instagram", href: "https://www.instagram.com" },
   { src: "/twitter.png", alt: "Twitter", href: "https://www.twitter.com" },

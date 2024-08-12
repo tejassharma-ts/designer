@@ -10,6 +10,8 @@ import ShinyBorderContainer from "@/components/ui/fancy-border";
 import { Icons } from "@/components/icons";
 import { PreloaderContext, PreloaderContextProps } from "@/context/preloader-context";
 import { SocialIcons } from "@/components/nav";
+import { projects } from "@/data";
+import Link from "next/link";
 
 const heroElementVariants = {
   down: {
@@ -152,30 +154,21 @@ export default function Hero() {
           animate={marqueeControls}
           variants={marqueeVariants}
           className="flex min-w-full flex-shrink-0 justify-around gap-3">
-          <ShinyBorderContainer className="group relative min-h-96">
-            <Image fill src="/project-1.jpg" alt="project-1" className="object-cover" />
-            <span className="absolute right-4 top-4 z-50 flex size-14 items-center justify-center rounded-full bg-white/10 backdrop-blur-lg">
-              <Icons.arrow className="-rotate-45 transition-transform group-hover:rotate-0" />
-            </span>
-          </ShinyBorderContainer>
-          <ShinyBorderContainer className="group relative min-h-96">
-            <Image fill src="/project-2.jpg" alt="project-1" className="object-cover" />
-            <span className="absolute right-4 top-4 z-50 flex size-14 items-center justify-center rounded-full bg-white/10 backdrop-blur-lg">
-              <Icons.arrow className="-rotate-45 transition-transform group-hover:rotate-0" />
-            </span>
-          </ShinyBorderContainer>
-          <ShinyBorderContainer className="group relative min-h-96">
-            <Image fill src="/project-3.jpg" alt="project-1" className="object-cover" />
-            <span className="absolute right-4 top-4 z-50 flex size-14 items-center justify-center rounded-full bg-white/10 backdrop-blur-lg">
-              <Icons.arrow className="-rotate-45 transition-transform group-hover:rotate-0" />
-            </span>
-          </ShinyBorderContainer>
-          <ShinyBorderContainer className="group relative min-h-96">
-            <Image fill src="/project-4.jpg" alt="project-1" className="object-cover" />
-            <span className="absolute right-4 top-4 z-50 flex size-14 items-center justify-center rounded-full bg-white/10 backdrop-blur-lg">
-              <Icons.arrow className="-rotate-45 transition-transform group-hover:rotate-0" />
-            </span>
-          </ShinyBorderContainer>
+          {projects.map((project) => (
+            <ShinyBorderContainer className="group relative min-h-96">
+              <Image
+                fill
+                src={project.projectSourceUrl}
+                alt="project-1"
+                className="object-cover"
+                unoptimized
+              />
+              <span className="absolute right-4 top-4 z-50 flex size-14 items-center justify-center rounded-full bg-white/10 backdrop-blur-lg">
+                <Icons.arrow className="-rotate-45 transition-transform group-hover:rotate-0" />
+              </span>
+              <a href={project.href} className="absolute inset-0" />
+            </ShinyBorderContainer>
+          ))}
         </motion.div>
 
         <motion.div
@@ -183,30 +176,21 @@ export default function Hero() {
           animate={marqueeControls}
           variants={marqueeVariants}
           className="flex min-w-full flex-shrink-0 justify-around gap-3">
-          <ShinyBorderContainer className="group relative min-h-96">
-            <Image fill src="/project-1.jpg" alt="project-1" className="object-cover" />
-            <span className="absolute right-4 top-4 z-50 flex size-14 items-center justify-center rounded-full bg-white/10 backdrop-blur-lg">
-              <Icons.arrow className="-rotate-45 transition-transform group-hover:rotate-0" />
-            </span>
-          </ShinyBorderContainer>
-          <ShinyBorderContainer className="group relative min-h-96">
-            <Image fill src="/project-2.jpg" alt="project-1" className="object-cover" />
-            <span className="absolute right-4 top-4 z-50 flex size-14 items-center justify-center rounded-full bg-white/10 backdrop-blur-lg">
-              <Icons.arrow className="-rotate-45 transition-transform group-hover:rotate-0" />
-            </span>
-          </ShinyBorderContainer>
-          <ShinyBorderContainer className="group relative min-h-96">
-            <Image fill src="/project-3.jpg" alt="project-1" className="object-cover" />
-            <span className="absolute right-4 top-4 z-50 flex size-14 items-center justify-center rounded-full bg-white/10 backdrop-blur-lg">
-              <Icons.arrow className="-rotate-45 transition-transform group-hover:rotate-0" />
-            </span>
-          </ShinyBorderContainer>
-          <ShinyBorderContainer className="group relative min-h-96">
-            <Image fill src="/project-4.jpg" alt="project-1" className="object-cover" />
-            <span className="absolute right-4 top-4 z-50 flex size-14 items-center justify-center rounded-full bg-white/10 backdrop-blur-lg">
-              <Icons.arrow className="-rotate-45 transition-transform group-hover:rotate-0" />
-            </span>
-          </ShinyBorderContainer>
+          {projects.map((project) => (
+            <ShinyBorderContainer className="group relative min-h-96">
+              <Image
+                fill
+                src={project.projectSourceUrl}
+                alt="project-1"
+                className="object-cover"
+                unoptimized
+              />
+              <span className="absolute right-4 top-4 z-50 flex size-14 items-center justify-center rounded-full bg-white/10 backdrop-blur-lg">
+                <Icons.arrow className="-rotate-45 transition-transform group-hover:rotate-0" />
+              </span>
+              <a href={project.href} className="absolute inset-0" />
+            </ShinyBorderContainer>
+          ))}
         </motion.div>
       </motion.div>
     </div>

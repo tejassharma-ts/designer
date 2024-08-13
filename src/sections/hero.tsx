@@ -154,8 +154,8 @@ export default function Hero() {
           animate={marqueeControls}
           variants={marqueeVariants}
           className="flex min-w-full flex-shrink-0 justify-around gap-3">
-          {projects.map((project) => (
-            <ShinyBorderContainer className="group relative min-h-96">
+          {projects.map((project, idx) => (
+            <ShinyBorderContainer key={idx} className="group relative min-h-96">
               <Image
                 fill
                 src={project.projectSourceUrl}
@@ -176,8 +176,8 @@ export default function Hero() {
           animate={marqueeControls}
           variants={marqueeVariants}
           className="flex min-w-full flex-shrink-0 justify-around gap-3">
-          {projects.map((project) => (
-            <ShinyBorderContainer className="group relative min-h-96">
+          {projects.map((project, idx) => (
+            <ShinyBorderContainer key={idx} className="group relative min-h-96">
               <Image
                 fill
                 src={project.projectSourceUrl}

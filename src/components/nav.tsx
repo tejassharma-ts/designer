@@ -60,9 +60,10 @@ export default function Nav() {
       </div>
       <SocialIcons />
 
-      <div className="h-auto rounded-lg bg-gradient-to-b from-white p-px">
+      <div className="h-auto rounded-lg bg-gradient-to-b from-white p-px relative">
         <Button className="inline-block w-full rounded-[calc(2rem+1px)] bg-primary px-6 sm:px-4">
           Portfolio
+          <a href="https://dribbble.com/JatinPrajapaty" className="absolute inset-0"/>
         </Button>
       </div>
     </nav>
